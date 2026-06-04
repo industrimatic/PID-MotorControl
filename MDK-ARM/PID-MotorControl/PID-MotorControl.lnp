@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"pid-motorcontrol\startup_stm32f103xe.o"
+"pid-motorcontrol\main.o"
+"pid-motorcontrol\stm32f1xx_it.o"
+"pid-motorcontrol\stm32f1xx_hal_msp.o"
+"pid-motorcontrol\stm32f1xx_hal_gpio_ex.o"
+"pid-motorcontrol\stm32f1xx_hal_tim.o"
+"pid-motorcontrol\stm32f1xx_hal_tim_ex.o"
+"pid-motorcontrol\stm32f1xx_hal.o"
+"pid-motorcontrol\stm32f1xx_hal_rcc.o"
+"pid-motorcontrol\stm32f1xx_hal_rcc_ex.o"
+"pid-motorcontrol\stm32f1xx_hal_gpio.o"
+"pid-motorcontrol\stm32f1xx_hal_dma.o"
+"pid-motorcontrol\stm32f1xx_hal_cortex.o"
+"pid-motorcontrol\stm32f1xx_hal_pwr.o"
+"pid-motorcontrol\stm32f1xx_hal_flash.o"
+"pid-motorcontrol\stm32f1xx_hal_flash_ex.o"
+"pid-motorcontrol\stm32f1xx_hal_exti.o"
+"pid-motorcontrol\stm32f1xx_hal_uart.o"
+"pid-motorcontrol\system_stm32f1xx.o"
+"pid-motorcontrol\motor.o"
+--strict --scatter "PID-MotorControl\PID-MotorControl.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PID-MotorControl.map" -o PID-MotorControl\PID-MotorControl.axf
